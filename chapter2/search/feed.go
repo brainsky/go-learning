@@ -3,9 +3,10 @@ package search
 import (
 	"encoding/json"
 	"os"
+	"path/filepath"
 )
 
-const dataFile = "data/data.json"
+const dataFile = "data\\data.json"
 
 type Feed struct {
 	Name string `json:"site"`
@@ -14,7 +15,9 @@ type Feed struct {
 }
 
 func RetrieveFeeds() ([]*Feed, error) {
-	file, err := os.Open(dataFile)
+	current, err := os.Getwd()
+	dataPath := filepath.Join(current, "chapter2\\data\\data.json")
+	file, err := os.Open(dataPath)
 
 	if err != nil {
 		return nil, err
