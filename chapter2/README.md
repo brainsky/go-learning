@@ -1,8 +1,8 @@
-#这是一个读取 rss 资源的代码
+# 这是一个读取 rss 资源的代码
 
-##Go 语言实践第二章内容   
+## Go 语言实践第二章内容   
 **让我理解初步认识 go import、main包、init函数、goroutine的使用map和slice的创建**  
-###然后自己对goroutine发出的一些疑问？  
+### 然后自己对goroutine发出的一些疑问？  
 代码在search/search.go中的go函数  
 __问题如下：
 1. Goroutine函数怎么传入参数？ 
